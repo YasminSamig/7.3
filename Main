@@ -15,5 +15,14 @@ public class Main {
             i--;
         }
         for(int x : nums) System.out.print(x);
+        System.out.println(numsdeler(nums, 3));
+    }
+    public static ArrayList numsdeler (ArrayList x, int m){
+        for (int i = x.size(); i>=0; i--){
+            if (m == x.get(i)) {
+                x.remove(i);
+            }
+        }
+        return x;
     }
 }
